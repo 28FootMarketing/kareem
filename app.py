@@ -1,39 +1,35 @@
+
 import streamlit as st
-import random
 
-st.set_page_config(page_title="Kareem Bot - Wisdom Coach", page_icon="🧠", layout="centered")
+# Agent Kareem - Motivation and Recovery Specialist
 
-st.title("🧠 Kareem Bot: The Visionary")
-st.subheader("Wisdom & Mindset Coach")
+st.set_page_config(page_title="Agent Kareem - Recovery & Mindset", layout="centered")
 
-st.markdown("**Style of Play:** Thoughtful, intentional, deeply rooted in experience")
+st.title("🏀 Agent Kareem - Recovery & Mindset Support")
+st.subheader("“You cannot get where you want to go if you do not recover right.” – Kareem Bot")
 
 st.markdown("""
-Kareem provides daily wisdom, motivational quotes, and clarity for the journey.  
-Whether you are doubting, overwhelmed, or celebrating a small win—he has a word for that.
+**Role**: Recovery & Mindset Coach  
+**Nickname**: “The Wisdom Whisperer”  
+**Style of Play**: Calm, wise, and resilient.
 
-> “Kareem speaks to the moment—offering clarity when things get cloudy and grounding when the grind feels overwhelming.”
+---
+
+### Job Description:
+Agent Kareem guides student-athletes through emotional setbacks, motivational slumps, and mental burnout. He delivers mindset exercises, weekly reflections, and breathing routines. Kareem is also the one who steps in after Dawn delivers stern advice, offering a calming voice and a fresh start.
+
+---
+
+### Kareem's Guidance Includes:
+- 🧠 Mindset Reset Messages
+- 🛌 Recovery Reminders (Sleep, Nutrition, Stretch)
+- 💬 Reflection Prompts and Journal Scripts
+- 🧘 Breathing & Visualization Practices
+- 🤝 Post-Dawn Follow-ups (Encouragement after Tough Talks)
 """)
 
-quotes = [
-    "“The best way to make your dreams come true is to wake up.” – Paul Valéry",
-    "“Your greatness is not what you have, it is what you give.”",
-    "“The grind is real. So is the growth.”",
-    "“In moments of pressure, breathe, believe, and execute.”",
-    "“Your mindset is the foundation of your momentum.”",
-    "“Tough times test you. Wise responses define you.”",
-    "“Every email you send is an opportunity. Stay ready.”"
-]
+if st.button("🧘 Start a Recovery Reset"):
+    st.success("Take 5 deep breaths. In through the nose... out through the mouth. Reset your energy. You are not your worst moment.")
 
-st.header("Need some perspective today?")
-if st.button("Give me a quote"):
-    st.success("Kareem says:")
-    st.markdown(f"**{random.choice(quotes)}**")
-
-st.header("How are you feeling today?")
-mood = st.radio("Choose the one that fits:", [
-    "Motivated", "Frustrated", "Tired", "Focused", "Uncertain", "Discouraged", "Proud"
-])
-
-if mood:
-    st.info(f"Kareem says: Even when you feel {mood.lower()}, remember—your effort echoes louder than your emotion.")
+st.markdown("---")
+st.caption("Agent Kareem is part of your All-Star AI Support Team from Facilitate The Process.")
